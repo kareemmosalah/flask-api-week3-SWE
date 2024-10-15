@@ -1,4 +1,10 @@
 {
+    "info": {
+        "name": "Flask API Test Collection",
+        "_postman_id": "12345-abcde-67890-fghij",
+        "description": "Collection to test the Flask API endpoints",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+      },
     "item": [
       {
         "name": "GET /",
