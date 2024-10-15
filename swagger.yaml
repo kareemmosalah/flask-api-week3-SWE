@@ -1,0 +1,80 @@
+openapi: 3.0.0
+info:
+  title: Simple Flask API
+  version: "1.0"
+paths:
+  /:
+    get:
+      summary: Welcome Message
+      responses:
+        '200':
+          description: A simple welcome message
+
+  /add:
+    post:
+      summary: Add two numbers
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                num1:
+                  type: number
+                num2:
+                  type: number
+      responses:
+        '200':
+          description: Sum of two numbers
+        '400':
+          description: Missing parameters
+
+  /multiply:
+    post:
+      summary: Multiply two numbers
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                num1:
+                  type: number
+                num2:
+                  type: number
+      responses:
+        '200':
+          description: Product of two numbers
+        '400':
+          description: Missing parameters
+
+  /items/{item_id}:
+    get:
+      summary: Get an item by ID
+      parameters:
+        - in: path
+          name: item_id
+          schema:
+            type: integer
+          required: true
+      responses:
+        '200':
+          description: Item found
+        '404':
+          description: Item not found
+
+    delete:
+      summary: Delete an item by ID
+      parameters:
+        - in: path
+          name: item_id
+          schema:
+            type: integer
+          required: true
+      responses:
+        '200':
+          description: Item deleted
+        '404':
+          description: Item not found

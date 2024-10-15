@@ -1,0 +1,147 @@
+{
+
+    "item": [
+      {
+        "name": "GET /",
+        "request": {
+          "method": "GET",
+          "header": [],
+          "url": {
+            "raw": "http://localhost:3000/",
+            "protocol": "http",
+            "host": ["localhost"],
+            "port": "3000",
+            "path": [""]
+          }
+        },
+        "response": []
+      },
+      {
+        "name": "POST /add with valid input",
+        "request": {
+          "method": "POST",
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "body": {
+            "mode": "raw",
+            "raw": "{\"num1\": 5, \"num2\": 10}"
+          },
+          "url": {
+            "raw": "http://localhost:3000/add",
+            "protocol": "http",
+            "host": ["localhost"],
+            "port": "3000",
+            "path": ["add"]
+          }
+        },
+        "response": []
+      },
+      {
+        "name": "POST /add with missing input",
+        "request": {
+          "method": "POST",
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "body": {
+            "mode": "raw",
+            "raw": "{\"num1\": 5}"
+          },
+          "url": {
+            "raw": "http://localhost:3000/add",
+            "protocol": "http",
+            "host": ["localhost"],
+            "port": "3000",
+            "path": ["add"]
+          }
+        },
+        "response": []
+      },
+      {
+        "name": "POST /multiply with valid input",
+        "request": {
+          "method": "POST",
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "body": {
+            "mode": "raw",
+            "raw": "{\"num1\": 3, \"num2\": 7}"
+          },
+          "url": {
+            "raw": "http://localhost:3000/multiply",
+            "protocol": "http",
+            "host": ["localhost"],
+            "port": "3000",
+            "path": ["multiply"]
+          }
+        },
+        "response": []
+      },
+      {
+        "name": "POST /multiply with missing input",
+        "request": {
+          "method": "POST",
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "body": {
+            "mode": "raw",
+            "raw": "{\"num1\": 3}"
+          },
+          "url": {
+            "raw": "http://localhost:3000/multiply",
+            "protocol": "http",
+            "host": ["localhost"],
+            "port": "3000",
+            "path": ["multiply"]
+          }
+        },
+        "response": []
+      },
+      {
+        "name": "GET /items/1",
+        "request": {
+          "method": "GET",
+          "header": [],
+          "url": {
+            "raw": "http://localhost:3000/items/1",
+            "protocol": "http",
+            "host": ["localhost"],
+            "port": "3000",
+            "path": ["items", "1"]
+          }
+        },
+        "response": []
+      },
+      {
+        "name": "DELETE /items/4",
+        "request": {
+          "method": "DELETE",
+          "header": [],
+          "url": {
+            "raw": "http://localhost:3000/items/4",
+            "protocol": "http",
+            "host": ["localhost"],
+            "port": "3000",
+            "path": ["items", "4"]
+          }
+        },
+        "response": []
+      }
+    ]
+  }
+  
